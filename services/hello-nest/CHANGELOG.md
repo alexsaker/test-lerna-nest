@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/alexsaker/test-lerna-nest/compare/hello-nest@0.2.0...hello-nest@0.3.0) (2020-01-16)
+
+
+### Features
+
+* **all:** changed hard coded port to env variables with default fallback ([48bcca9](https://github.com/alexsaker/test-lerna-nest/commit/48bcca95770119e7aa15eada75d824d156b14b68))
+
+
+
+
+
 # [0.2.0](https://github.com/alexsaker/test-lerna-nest/compare/hello-nest@0.1.0...hello-nest@0.2.0) (2020-01-16)
 
 
