@@ -23,6 +23,10 @@ steps:
   displayName: 'Add dependencies'
 
 - script: |
+    npm install -g lerna
+    npm install -g rimraf  
+    npm install -g @nestjs/cli
+    npm i 
     lerna run build
   displayName: 'builbuild'
 
