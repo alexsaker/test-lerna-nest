@@ -17,11 +17,15 @@ steps:
 
 - script: |
     npm install -g lerna
-    npm install -g rimraf
+    npm install -g rimraf  
+    npm install -g @nestjs/cli
     npm i 
     lerna bootstrap
+  displayName: 'Add dependencies'
+
+- script: |
     lerna run build
-  displayName: 'npm install and build'
+  displayName: 'builbuild'
 
 - script: |
     lerna run test
