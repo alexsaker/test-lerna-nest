@@ -20,7 +20,6 @@ steps:
     npm install -g rimraf  
     npm install -g @nestjs/cli
     npm i 
-    lerna bootstrap
   displayName: 'Add dependencies'
 
 - script: |
