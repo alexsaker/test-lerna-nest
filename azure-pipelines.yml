@@ -1,0 +1,35 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install -g lerna
+    npm install -g rimraf  
+    npm install -g @nestjs/cli
+    npm i 
+  displayName: 'Add dependencies'
+
+- script: |
+    npm install -g lerna
+    npm install -g rimraf  
+    npm install -g @nestjs/cli
+    npm i 
+    lerna run build
+  displayName: 'builbuild'
+
+- script: |
+    lerna run test
+  displayName: 'Run tests on all services using lerna'
