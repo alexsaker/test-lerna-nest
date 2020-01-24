@@ -18,6 +18,7 @@ steps:
 - script: |
     npm install -g lerna
     npm install -g rimraf
+    npm i 
     lerna bootstrap
     lerna run build
   displayName: 'npm install and build'
